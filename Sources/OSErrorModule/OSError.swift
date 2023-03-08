@@ -6,7 +6,10 @@
 //
 
 ///
-public enum OSError: Error {
+public enum
+    OSError:
+        Hashable,
+        Error {
     
     ///
     case unknown (statusCode: OSStatus)
