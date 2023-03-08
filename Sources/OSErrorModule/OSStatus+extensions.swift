@@ -6,10 +6,10 @@
 //
 
 ///
-public extension OSStatus {
+extension OSStatus {
     
     ///
-    var asOSError: OSError? {
+    public var asOSError: OSError? {
         switch self {
         case errSecSuccess:
             return nil
